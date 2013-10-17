@@ -1,6 +1,6 @@
 /*******************************************************************************
  *  @file      IntelCppConfig.h 2013\1\9 18:12:14 $
- *  @author    Wang Xiaotao<wangxiaotao1980@snda.com>
+ *  @author    Wang Xiaotao<wangxiaotao1980@gmail.com>
  *  Intel Cpp 编译器特性设置
  ******************************************************************************/
 

@@ -1,6 +1,6 @@
 /*******************************************************************************
  *  @file      EdgConfig.h 2013\2\21 12:01:46 $
- *  @author    Wang Xiaotao<wangxiaotao1980@snda.com>
+ *  @author    Wang Xiaotao<wangxiaotao1980@gmail.com>
  *  this file defines ... ...
  ******************************************************************************/
 

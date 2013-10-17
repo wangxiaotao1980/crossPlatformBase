@@ -1,6 +1,6 @@
 /*******************************************************************************
  *  @file      AndroidConfig.h 2013\2\20 16:29:49 $
- *  @author    Wang Xiaotao<wangxiaotao1980@snda.com>
+ *  @author    Wang Xiaotao<wangxiaotao1980@gmail.com>
  *  this file defines ... ...
  ******************************************************************************/
 
