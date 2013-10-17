@@ -1,6 +1,6 @@
 /*******************************************************************************
  *  @file      LibStdCppConfig.h 2013\1\9 17:49:42 $
- *  @author    Wang Xiaotao<wangxiaotao1980@snda.com>
+ *  @author    Wang Xiaotao<wangxiaotao1980@gmail.com>
  *  定义GNU 使用的 libstdC++ 特性
  ******************************************************************************/
 

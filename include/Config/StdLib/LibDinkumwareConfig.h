@@ -1,6 +1,6 @@
 /*******************************************************************************
  *  @file      LibDinkumwareConfig.h 2013\1\14 19:02:47 $
- *  @author    Wang Xiaotao<wangxiaotao1980@snda.com>
+ *  @author    Wang Xiaotao<wangxiaotao1980@gmail.com>
  *  Dinkumware(Visual C++) 标准库设定
  ******************************************************************************/
 

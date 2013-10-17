@@ -1,6 +1,6 @@
 /*******************************************************************************
  *  @file      STLPortConfig.h 2013\1\9 18:01:47 $
- *  @author    Wang Xiaotao<wangxiaotao1980@snda.com>
+ *  @author    Wang Xiaotao<wangxiaotao1980@gmail.com>
  *  STLport C++ 标准库的支持
  ******************************************************************************/
 
