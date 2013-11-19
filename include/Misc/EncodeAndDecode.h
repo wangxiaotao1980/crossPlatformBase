@@ -12,7 +12,7 @@
 #include <string>
 
 /******************************************************************************/
-SNDA_MISC_NAMESPACE_BEGIN
+CPS_MISC_NAMESPACE_BEGIN
 
 /**
  * UTF-8 编码转换为URL编码
@@ -22,9 +22,20 @@ SNDA_MISC_NAMESPACE_BEGIN
  * @return  std::string          ulr编码后的string对象
  *
  */
-SNDA_MISC_API_DECL std::string utf8urlEncode(const char* s);
+CPS_MISC_API_DECL std::string utf8urlEncode(const char* s);
 
 
-SNDA_MISC_NAMESPACE_END
+#if defined(CPS_OS_WINDOWS)
+
+std::string& UCS2ToUTF8(OUT std::string& destStr, IN const wchar_t*src, IN size_t size);
+std::wstring& UTF8ToUCS2(OUT std::wstring& destStr, IN const char*src, IN size_t size);
+std::string& UCS2ToGBK(OUT std::string& destStr, IN const wchar_t*src, IN size_t size);
+std::wstring& GBKToUCS2(OUT std::wstring& destStr, IN const char*src, IN size_t size);
+std::string& GBKToUTF8(OUT std::string& destStr, IN const char*src, IN size_t size);
+std::string& UTF8ToGBK(OUT std::string& destStr, IN const char*src, IN size_t size);
+
+#endif
+
+CPS_MISC_NAMESPACE_END
 /******************************************************************************/
 #endif// ENCODEANDDECODE_519EA654_42E0_4012_B61A_194DB3E60D74_H__

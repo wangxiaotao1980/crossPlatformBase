@@ -10,26 +10,48 @@
 #include "../Config/Config.h"
 /******************************************************************************/
 
-#define  SNDA_MISC_NAMESPACE snda_misc
+#define  CPS_MISC_NAMESPACE CPS_misc
 #if defined(__cplusplus)
-    #define  SNDA_MISC_NAMESPACE_BEGIN \
-        namespace SNDA_MISC_NAMESPACE\
+    #define  CPS_MISC_NAMESPACE_BEGIN \
+        namespace CPS_MISC_NAMESPACE\
             {
 
-    #define  SNDA_MISC_NAMESPACE_END \
+    #define  CPS_MISC_NAMESPACE_END \
             }
 
 #endif
 
-#if defined(SNDA_ALL_DYNAMIC_LINK) || defined(SNDA_MISC_DYNAMIC_LINK)
-    #if defined(SNDA_ALL_SOURCE) || defined(SNDA_MISC_SOURCE) 
-        #define SNDA_MISC_API_DECL SNDA_SYMBOL_EXPORT
+#if defined(CPS_ALL_DYNAMIC_LINK) || defined(CPS_MISC_DYNAMIC_LINK)
+    #if defined(CPS_ALL_SOURCE) || defined(CPS_MISC_SOURCE) 
+        #define CPS_MISC_API_DECL CPS_SYMBOL_EXPORT
     #else
-        #define SNDA_MISC_API_DECL SNDA_SYMBOL_IMPORT
+        #define CPS_MISC_API_DECL CPS_SYMBOL_IMPORT
     #endif
 #else
-    #define SNDA_MISC_API_DECL
+    #define CPS_MISC_API_DECL
 #endif
+
+/**
+ * @def IN
+ * 定义参数为输入或者的标识符
+ */
+
+#if defined(IN)
+    #undef IN
+#endif
+
+#define IN
+
+
+/**
+ * @def OUT
+ * 定义参数为输出或者说返回值的标识符
+ */
+#if defined(OUT)
+    #undef OUT
+#endif
+
+#define OUT
 
 /******************************************************************************/
 #endif// MISCCONFIG_ABE90963_C0DB_4B63_8EA2_8BA096A13299_H__

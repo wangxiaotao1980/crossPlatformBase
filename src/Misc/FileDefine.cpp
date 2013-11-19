@@ -3,18 +3,18 @@
  *  @author    Wang Xiaotao<wangxiaotao1980@gmail.com> (中文编码测试)
  ******************************************************************************/
 
-#include "CrossPlatform/Misc/FileDefine.h"
+#include "Misc/FileDefine.h"
 
-#if defined(SNDA_COMILER_MSVC_CPP)
-    #include "CrossPlatform/Misc/EncodeAndDecode.h"
+#if defined(CPS_COMILER_MSVC_CPP)
+    #include "Misc/EncodeAndDecode.h"
 #endif
 /******************************************************************************/
 
-SNDA_MISC_NAMESPACE_BEGIN
+CPS_MISC_NAMESPACE_BEGIN
 
 // -----------------------------------------------------------------------------
 // public   
-#if defined(SNDA_COMILER_MSVC_CPP)
+#if defined(CPS_COMILER_MSVC_CPP)
 FILE* fopen_(const std::string& filename, const std::string& mode)
 {
     std::wstring wfilename;
@@ -38,10 +38,10 @@ FILE* fopen_(const std::string& filename, const std::string& mode)
 #endif //
 
 
-#if defined(SNDA_COMILER_MSVC_CPP)
+#if defined(CPS_COMILER_MSVC_CPP)
 // -----------------------------------------------------------------------------
 // public   
-SNDA_MISC_API_DECL int stat64_( const std::string& filename, struct stat_* buf )
+CPS_MISC_API_DECL int stat64_( const std::string& filename, struct stat_* buf )
 {
     std::wstring wfilename;
     UTF8ToUCS2(wfilename, filename.c_str(), filename.size());
@@ -51,9 +51,9 @@ SNDA_MISC_API_DECL int stat64_( const std::string& filename, struct stat_* buf )
    /**
     * @todo 等待 stat64_ 其他平台实现
     */
-#endif // SNDA_COMILER_MSVC_CPP)
+#endif // CPS_COMILER_MSVC_CPP)
 
-SNDA_MISC_NAMESPACE_END
+CPS_MISC_NAMESPACE_END
 
 
 // 

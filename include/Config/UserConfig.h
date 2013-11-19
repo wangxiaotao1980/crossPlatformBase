@@ -11,9 +11,9 @@
 // todo : 用户自己加入自定义设定
 
 // 编译成动态连接库的时候，需要定义如下宏
-// #define SNDA_ALL_DYNAMIC_LINK
+// #define CPS_ALL_DYNAMIC_LINK
 // 编译成静态接库的时候，需要定义如下宏
-// #define SNDA_ALL_STATIC_LINK
+// #define CPS_ALL_STATIC_LINK
 
 
 /******************************************************************************/

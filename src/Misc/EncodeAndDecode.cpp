@@ -3,10 +3,10 @@
  *  @author    Wang Xiaotao<wangxiaotao1980@gmail.com> (中文编码测试)
  ******************************************************************************/
 
-#include "CrossPlatform/Misc/EncodeAndDecode.h"
+#include "Misc/EncodeAndDecode.h"
 
 #include <string>
-#if defined(SNDA_OS_WINDOWS)
+#if defined(CPS_OS_WINDOWS)
     #include <Windows.h>
 #endif
 
@@ -14,7 +14,7 @@
 
 /******************************************************************************/
 
-SNDA_MISC_NAMESPACE_BEGIN
+CPS_MISC_NAMESPACE_BEGIN
 
 // -----------------------------------------------------------------------------
 // public
@@ -68,7 +68,7 @@ std::string utf8urlEncode( const char* s )
     return resultURLStr;
 }
 
-#if defined(SNDA_OS_WINDOWS)
+#if defined(CPS_OS_WINDOWS)
 
 std::string& UCS2ToUTF8(OUT std::string& destStr, IN const wchar_t*src, IN size_t size)
 {
@@ -131,7 +131,7 @@ std::string& UTF8ToGBK(OUT std::string& destStr, IN const char*src, IN size_t si
 
 #endif
 
-SNDA_MISC_NAMESPACE_END
+CPS_MISC_NAMESPACE_END
 // 
 // -----------------------------------------------------------------------------
 
